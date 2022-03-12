@@ -1,0 +1,389 @@
+@font-face {
+    src: url(BebasNeue-Regular.ttf);
+    font-family: bebasnue;
+}
+
+@font-face {
+    src: url(JetBrainsMono-Light.ttf);
+    font-family: jetbrains;
+}
+
+@font-face {
+    src: url(GlacialIndifference-Regular.otf);
+    font-family: glacial;
+}
+
+.mobile{
+    display: none;
+}
+@media only screen and (max-device-width: 480px) {
+    .mobile{display: block;}
+    .desktop {display: none;}
+ }
+
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+@keyframes flow {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.header{
+    height: 100vh;
+    background-color: black;
+}
+.links{
+    min-height: 12vh;
+    width: 90%;
+    margin: auto;
+    display:flex;
+    padding: 20px 50px 75px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links ul li{
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+    display: inline-block;
+    font-size: 200%;
+    font-family: 'bebasnue';
+    line-height: 120%;
+    animation: flow 10s ease-in-out infinite;
+    background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+
+.photo{
+    height: 60vh;
+    width: 50vh;
+    left: 10vw;
+    position: relative;
+}
+
+
+.photo img{
+    height: 50vh; top: 0vw; position: relative; border-radius: 50%; 
+}
+
+.photo h3{
+    font-family: 'bebasnue';
+    font-size: 2vw;
+    margin: 5%;
+    animation: flow 10s ease-in-out infinite;
+    background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.name-text{
+    font-family: 'bebasnue';
+    line-height: 120%;
+    animation: flow 10s ease-in-out infinite;
+    background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: right;
+    width: 95vw;
+
+    position: absolute;
+    font-size: 12vw;
+    bottom: 10%;
+    transform: translate(-50% -50%);
+}
+
+.abtme-tag{
+    list-style: none;
+    bottom: -5%;
+    left: 50%;
+    position: absolute;
+    display: inline-block;
+    font-size: 4vh;
+    font-family: 'bebasnue';
+    line-height: 100%;
+    animation: flow 10s ease-in-out infinite;
+    background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: right;
+    width: 95vw;
+    text-align: center;
+    transform: translate(-50%, -100%);
+}
+
+.abtme-tag:hover{
+    color: white;
+    opacity: 0.7;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.abtme-tag a{
+    text-decoration: none;
+
+}
+
+
+
+.aboutme{
+    animation: flow 10s ease-in-out infinite;
+    background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
+    background-size: 300%;
+    height: 100vh;
+}
+
+
+.summary{
+    position:relative;
+    background-color: black;
+    width: 70vw;
+    height: 30vh;
+    top: 10vh;
+    border-radius: 30px;
+    margin: auto;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+    margin-bottom: 100px;
+}
+
+.summary:hover{
+    box-shadow: 0 15px 60px #fbfcfa;
+    transition-duration: 1s;
+}
+
+.abt-para{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 43%;
+    height: 15vh;
+    width: 50vw;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.abt-para p{
+    font-family: 'glacial';
+    font-size: 1.2vw;
+    color: whitesmoke;
+    text-align: right;
+    transform: translate(-50% -50%);
+    
+}
+
+.abt-photo{ 
+    display: block;
+    position:absolute;
+    width: 20vh;
+    height: 20vh;
+    top: 50%;
+    right: -5%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.abt-photo:hover{
+    box-shadow: 0 0 40px 0 white;
+    transition-duration: 1s;}
+
+.abt-photo img{
+    display: block;
+    position:absolute;
+    height: 20vh;
+    border-radius: 50%;
+}
+
+.project{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'bebasnue';
+}
+
+.container {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5vw, 1fr));
+    grid-gap: 6vw;
+    margin: 0 auto;
+    padding: 2vw 0;
+
+}
+
+    .card {
+      position: relative;
+      width: 30vh;
+      height: 40vh;
+      margin: 0 auto;
+      background: #fbfcfa;
+      border-radius: 15px;
+      box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+    }
+      .face {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .face1 {
+          box-sizing: border-box;
+          padding: 20px;
+
+        }
+
+        .face1 h2 {
+            margin: 0;
+            padding: 0;
+          }
+
+          .java {
+            background-color: black;
+            font-family: 'glacial';
+            line-height: 150%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2vh;
+          }
+
+          .python {
+            background-color: black;
+            font-family: 'glacial';
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2vh;
+
+          }
+
+          .cSharp {
+            background-color: black;
+            font-family: 'glacial';
+            line-height: 150%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2vh;
+
+          }
+          .cSharp:hover {
+            background-color: black;
+            font-family: 'glacial';
+            line-height: 150%;
+            animation: flow 10s ease-in-out infinite;
+            background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
+            background-size: 300%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        
+
+        .face2 {
+          transition: 0.5s;
+        }
+        .face2 h2 {
+            margin: 0;
+            padding: 0;
+            font-size:  9vh;
+            color: #fff;
+            transition: 0.5s;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+  
+    .card:hover .face.face2 {
+      height: 6vh;
+
+    }
+    .card:hover h2 {
+        font-size: 2vh;
+    }
+
+    .card:hover{
+        box-shadow: 0 15px 60px #fbfcfa;
+        transition: 1s;
+    }
+    
+
+    .card:nth-child(1) .face.face2 {
+        background-color: black;
+        border-radius: 15px;
+    }
+
+    .card:nth-child(2) .face.face2 {
+        background-color: #000;
+        border-radius: 15px;
+    }
+
+    .card:nth-child(3) .face.face2 {
+        background-color: #000;
+        border-radius: 15px;
+    }
+
+    .mobile{
+        height: 100vh;
+        background-color: #000;
+    }
+
+    .mob-text{
+        font-family: 'bebasnue';
+        line-height: 120%;
+        animation: flow 10s ease-in-out infinite;
+        background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
+        background-size: 300%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: right;
+        width: 95vw;
+    
+        position: fixed;
+        font-size: 19vw;
+        bottom: 10%;
+        transform: translate(-50% -50%);
+    }
+
+    .mob-img{
+        width: 50vw; height: 50vw; background-color: red;
+        top: 10%; position: fixed; left: 25%; border-radius: 50%;
+    }
+
+        
+
+
+
+
+
+
+
+
